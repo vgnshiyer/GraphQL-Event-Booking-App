@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  app:
+    build: .
+    volumes:
+      - ./main:/main
+    ports:
+      - "3000:3000"
+    command: >
+      sh -c "npm start"
